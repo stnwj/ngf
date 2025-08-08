@@ -386,3 +386,113 @@
 .scroll-margin-top-25 {
   scroll-margin-top: 1.5625rem !important; /* 25px */
 }
+
+/* Mobile Overrides untuk mengurangi margin yang terlalu lebar */
+@media (max-width: 767.98px) {
+  /* Reduce container padding */
+  .container-full-width {
+    padding-left: 1rem !important; /* 16px - berikan margin yang lebih seimbang */
+    padding-right: 1rem !important; /* 16px - berikan margin yang lebih seimbang */
+  }
+
+  /* Reduce large margins for mobile */
+  .mt-70 {
+    margin-top: 1.5rem !important; /* 24px - dikurangi lebih signifikan */
+  }
+
+  .mt-75 {
+    margin-top: 1.5rem !important; /* 24px - dikurangi lebih signifikan */
+  }
+
+  .mt-100 {
+    margin-top: 2rem !important; /* 32px - dikurangi lebih signifikan */
+  }
+
+  .mt-120 {
+    margin-top: 2.5rem !important; /* 40px - dikurangi lebih signifikan */
+  }
+
+  .mt-150 {
+    margin-top: 3rem !important; /* 48px - dikurangi lebih signifikan */
+  }
+
+  /* Reduce left/right margins */
+  .ml-70 {
+    margin-left: 0.5rem !important; /* 8px - berikan margin yang lebih seimbang */
+  }
+
+  .mr-70 {
+    margin-right: 0.5rem !important; /* 8px - berikan margin yang lebih seimbang */
+  }
+
+  /* Reduce padding */
+  .px-70 {
+    padding-left: 0.5rem !important; /* 8px - berikan margin yang lebih seimbang */
+    padding-right: 0.5rem !important; /* 8px - berikan margin yang lebih seimbang */
+  }
+
+  /* Override Bootstrap row margins */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Override Bootstrap col margins */
+  .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Further reduce margins for small mobile */
+  .container-full-width {
+    padding-left: 0.75rem !important; /* 12px - berikan margin yang lebih seimbang */
+    padding-right: 0.75rem !important; /* 12px - berikan margin yang lebih seimbang */
+  }
+
+  .mt-70 {
+    margin-top: 1rem !important; /* 16px - dikurangi lebih signifikan */
+  }
+
+  .mt-75 {
+    margin-top: 1rem !important; /* 16px - dikurangi lebih signifikan */
+  }
+
+  .mt-100 {
+    margin-top: 1.5rem !important; /* 24px - dikurangi lebih signifikan */
+  }
+
+  .mt-120 {
+    margin-top: 2rem !important; /* 32px - dikurangi lebih signifikan */
+  }
+
+  .mt-150 {
+    margin-top: 2.5rem !important; /* 40px - dikurangi lebih signifikan */
+  }
+
+  .ml-70 {
+    margin-left: 0.75rem !important; /* 12px - berikan margin yang lebih seimbang */
+  }
+
+  .mr-70 {
+    margin-right: 0.75rem !important; /* 12px - berikan margin yang lebih seimbang */
+  }
+
+  .px-70 {
+    padding-left: 0.75rem !important; /* 12px - berikan margin yang lebih seimbang */
+    padding-right: 0.75rem !important; /* 12px - berikan margin yang lebih seimbang */
+  }
+
+  /* Override Bootstrap row margins */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Override Bootstrap col margins */
+  .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

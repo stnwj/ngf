@@ -66,8 +66,8 @@
 /* Mobile Responsive Styles */
 @media (max-width: 767.98px) {
   #ecosystem {
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
+    margin-left: 1rem !important; /* dikurangi dari 2rem */
+    margin-right: 1rem !important; /* dikurangi dari 2rem */
   }
 
   .ecosystem-title {
@@ -82,11 +82,11 @@
     flex-direction: column !important;
     align-items: flex-start !important;
     text-align: left !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important; /* dikurangi dari 2rem */
   }
 
   .ecosystem-feature-icon {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.75rem !important; /* dikurangi dari 1rem */
   }
 
   .ecosystem-feature-title {
@@ -101,8 +101,8 @@
 
 @media (max-width: 575.98px) {
   #ecosystem {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
+    margin-left: 0.75rem !important; /* dikurangi dari 1.5rem */
+    margin-right: 0.75rem !important; /* dikurangi dari 1.5rem */
   }
 
   .ecosystem-title {

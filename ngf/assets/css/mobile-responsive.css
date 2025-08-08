@@ -1,0 +1,889 @@
+/* Mobile Responsive Styles - Bootstrap Format */
+/* This file contains all mobile-specific styles extracted from various CSS files */
+
+/* ===== MOBILE OVERRIDES (max-width: 767.98px) ===== */
+
+/* Body and HTML Mobile Overrides */
+@media (max-width: 767.98px) {
+  body,
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .body-bg-white {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body,
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .body-bg-white {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* ===== HEADER MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  header {
+    padding: 0.75rem 1rem !important;
+  }
+
+  header .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Mobile menu styles */
+  #mobileMenu {
+    border-top: 1px solid #e9ecef;
+    margin-top: 0.5rem;
+  }
+
+  #mobileMenu .nav-link {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f8f9fa;
+    color: #8e92bc !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  #mobileMenu .nav-link.active {
+    color: #141522 !important;
+    font-weight: 500;
+  }
+
+  #mobileMenu .nav-link:hover {
+    color: #141522 !important;
+  }
+
+  #mobileMenu .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  /* Mobile button adjustments */
+  #mobileMenu .btn-demo {
+    width: auto;
+    min-width: 120px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  /* Mobile logo adjustments */
+  header img[alt="ngf logo"] {
+    max-height: 35px !important;
+  }
+
+  /* Mobile hamburger button */
+  header .btn-link {
+    color: #141522 !important;
+    text-decoration: none;
+  }
+
+  header .btn-link:hover {
+    color: #ef5944 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  #mobileMenu .btn-demo {
+    min-width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  header img[alt="ngf logo"] {
+    max-height: 30px !important;
+  }
+}
+
+/* ===== CONTAINER MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  .container-full-width {
+    padding-left: 1rem !important; /* 16px */
+    padding-right: 1rem !important; /* 16px */
+  }
+
+  /* Override Bootstrap row margins */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Override Bootstrap col margins */
+  .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container-full-width {
+    padding-left: 0.75rem !important; /* 12px */
+    padding-right: 0.75rem !important; /* 12px */
+  }
+
+  /* Hero content margin for mobile */
+  .hero-section-custom .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* ===== HERO SECTION MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  .hero-section-custom {
+    padding: 0.75rem 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Hero Badge Container untuk mobile */
+  .hero-badge-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-title {
+    font-size: 38px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.5rem !important;
+    text-align: center !important;
+    display: block !important;
+  }
+
+  .judul-tebal {
+    font-size: 38px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    display: block !important;
+  }
+
+  .hero-description {
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-buttons {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 0.75rem;
+    text-align: center !important;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    max-width: 280px;
+  }
+
+  .hero-cards-container {
+    max-width: 100%;
+    margin: 0 auto;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.375rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Card Column - Berikan margin yang lebih seimbang */
+  .card-column {
+    margin-bottom: 0.375rem;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: 0.5rem !important; /* 8px margin kiri */
+    margin-right: 0.5rem !important; /* 8px margin kanan */
+  }
+
+  .waveform-container {
+    margin-bottom: 2rem !important; /* 32px */
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: 0.5rem !important; /* 8px margin kiri */
+    margin-right: 0.5rem !important; /* 8px margin kanan */
+  }
+
+  .card-1,
+  .card-2 {
+    margin-bottom: 0.375rem;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: 0.5rem !important; /* 8px margin kiri */
+    margin-right: 0.5rem !important; /* 8px margin kanan */
+  }
+
+  /* Card 2 specific mobile styles */
+  .card-2 {
+    height: 320px !important;
+    min-width: auto !important;
+  }
+
+  .card-2-badges-top {
+    top: 15px !important;
+    left: 15px !important;
+    gap: 8px !important;
+  }
+
+  .card-2-badges-bottom {
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 15px !important;
+    gap: 4px !important;
+  }
+
+  .card-2-badge {
+    padding: 4px 8px !important;
+    font-size: 10px !important;
+  }
+
+  .card-2-badge-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .card-2-badge-green {
+    height: 20px !important;
+    padding: 4px 8px !important;
+  }
+
+  .card-2-badge-text {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title,
+  .hero-title-gradient {
+    font-size: 28px !important;
+    display: inline !important;
+    line-height: 1.1 !important;
+    word-break: break-word;
+    white-space: normal !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .judul-tebal {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  /* Hero Badge Container untuk mobile kecil */
+  .hero-badge-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-buttons .btn {
+    font-size: 14px;
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-cards-container {
+    padding: 0 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+  }
+
+  /* Card Column - Berikan margin yang lebih seimbang untuk mobile kecil */
+  .card-column,
+  .waveform-container,
+  .card-1,
+  .card-2 {
+    max-width: 300px !important;
+    margin-left: 0.75rem !important; /* 12px margin kiri */
+    margin-right: 0.75rem !important; /* 12px margin kanan */
+  }
+
+  /* Tambahkan jarak khusus untuk waveform-container */
+  .waveform-container {
+    margin-bottom: 1.75rem !important; /* 28px */
+  }
+
+  /* Card 2 specific small mobile styles */
+  .card-2 {
+    height: 280px !important;
+  }
+
+  .card-2-badges-top {
+    top: 12px !important;
+    left: 12px !important;
+    gap: 6px !important;
+  }
+
+  .card-2-badges-bottom {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    gap: 3px !important;
+  }
+
+  .card-2-badge {
+    padding: 3px 6px !important;
+    font-size: 9px !important;
+  }
+
+  .card-2-badge-icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .card-2-badge-green {
+    height: 18px !important;
+    padding: 3px 6px !important;
+  }
+
+  .card-2-badge-text {
+    font-size: 9px !important;
+  }
+}
+
+/* ===== MARGIN AND PADDING MOBILE OVERRIDES ===== */
+@media (max-width: 767.98px) {
+  /* Reduce large margins for mobile */
+  .mt-70 {
+    margin-top: 1.5rem !important; /* 24px */
+  }
+
+  .mt-75 {
+    margin-top: 1.5rem !important; /* 24px */
+  }
+
+  .mt-100 {
+    margin-top: 2rem !important; /* 32px */
+  }
+
+  .mt-120 {
+    margin-top: 2.5rem !important; /* 40px */
+  }
+
+  .mt-150 {
+    margin-top: 3rem !important; /* 48px */
+  }
+
+  /* Reduce left/right margins */
+  .ml-70 {
+    margin-left: 0.5rem !important; /* 8px */
+  }
+
+  .mr-70 {
+    margin-right: 0.5rem !important; /* 8px */
+  }
+
+  /* Reduce padding */
+  .px-70 {
+    padding-left: 0.5rem !important; /* 8px */
+    padding-right: 0.5rem !important; /* 8px */
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Further reduce margins for small mobile */
+  .mt-70 {
+    margin-top: 1rem !important; /* 16px */
+  }
+
+  .mt-75 {
+    margin-top: 1rem !important; /* 16px */
+  }
+
+  .mt-100 {
+    margin-top: 1.5rem !important; /* 24px */
+  }
+
+  .mt-120 {
+    margin-top: 2rem !important; /* 32px */
+  }
+
+  .mt-150 {
+    margin-top: 2.5rem !important; /* 40px */
+  }
+
+  .ml-70 {
+    margin-left: 0.75rem !important; /* 12px */
+  }
+
+  .mr-70 {
+    margin-right: 0.75rem !important; /* 12px */
+  }
+
+  .px-70 {
+    padding-left: 0.75rem !important; /* 12px */
+    padding-right: 0.75rem !important; /* 12px */
+  }
+}
+
+/* ===== FOOTER MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  .footer-ngf {
+    padding: 1.5rem 1rem 0 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .footer-main {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .footer-menu {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .footer-menu a {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.75rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .footer-copyright {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .footer-socmed {
+    justify-content: center !important;
+    gap: 1.25rem !important;
+  }
+
+  .footer-socmed img {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-ngf {
+    padding: 1rem 0.75rem 0 0.75rem !important;
+  }
+
+  .footer-main {
+    gap: 0.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-menu {
+    gap: 0.5rem !important;
+  }
+
+  .footer-menu a {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .footer-bottom {
+    gap: 0.5rem !important;
+    padding-top: 1rem !important;
+  }
+
+  .footer-copyright {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .footer-socmed {
+    gap: 0.75rem !important;
+  }
+
+  .footer-socmed img {
+    height: 18px !important;
+    width: 18px !important;
+  }
+}
+
+/* ===== ABOUT US MOBILE STYLES ===== */
+@media (max-width: 991.98px) {
+  .about-badge-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .about-content {
+    margin-left: 0;
+    margin-right: 0 !important;
+    margin-top: 20px;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-left-section,
+  .about-right-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-title-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .about-title,
+  .about-title-gradient {
+    font-size: 28px;
+  }
+
+  .about-image-container {
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+    align-items: flex-start;
+    transform: none;
+    position: static;
+  }
+
+  .about-description {
+    max-width: 100%;
+  }
+
+  .accordion-section {
+    margin-top: 3rem;
+  }
+
+  .accordion-content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    overflow: visible;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .accordion-left-section,
+  .accordion-right-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .accordion-container {
+    order: 2;
+  }
+
+  .accordion-image-container {
+    order: 1;
+    text-align: center;
+    transform: none;
+  }
+
+  .accordion-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .collapse-item-style {
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
+
+  .judul-collapse-item-style {
+    font-size: 20px;
+  }
+
+  .custom-accordion-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  body .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  body .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body .about-badge-container {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  body .about-content {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  body .about-content-wrapper {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  body .about-left-section,
+  body .about-right-section {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  body .accordion-section {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+    width: calc(100% - 1.5rem) !important;
+  }
+
+  body .accordion-content-wrapper {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  body .accordion-left-section,
+  body .accordion-right-section {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  body .accordion-image-container {
+    transform: none !important;
+  }
+
+  body .accordion-container {
+    width: 100% !important;
+  }
+
+  body .collapse-item-clik {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+
+  body .about-image-container {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    transform: none !important;
+    position: static !important;
+  }
+
+  body .about-image {
+    width: 100px !important;
+    height: 100px !important;
+    margin-left: 0.25rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  body .about-description {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  body .about-title,
+  body .about-title-gradient {
+    font-size: 24px !important;
+  }
+
+  body .accordion-image {
+    max-width: 100% !important;
+    border-radius: 15px !important;
+  }
+
+  body .collapse-item-style {
+    padding: 0.75rem 0.25rem !important;
+  }
+
+  body .judul-collapse-item-style {
+    font-size: 18px !important;
+  }
+
+  body .custom-accordion-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  body .custom-accordion-content {
+    padding-left: 0.125rem !important;
+    padding-right: 0.125rem !important;
+  }
+}
+
+/* ===== NGF ECOSYSTEM MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  #ecosystem {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .ecosystem-title {
+    font-size: 28px !important;
+  }
+
+  .ecosystem-subtitle {
+    font-size: 28px !important;
+  }
+
+  .ecosystem-feature {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .ecosystem-feature-icon {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .ecosystem-feature-title {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .ecosystem-feature-description {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #ecosystem {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  .ecosystem-title {
+    font-size: 24px !important;
+  }
+
+  .ecosystem-subtitle {
+    font-size: 24px !important;
+  }
+
+  .ecosystem-feature-title {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .ecosystem-feature-description {
+    font-size: 13px !important;
+  }
+}
+
+/* ===== CLIENTS SLIDER MOBILE STYLES ===== */
+@media (max-width: 768px) {
+  .clients-slider-wrapper {
+    margin: 24px 1.5rem 0 1.5rem !important;
+    max-width: calc(100vw - 3rem);
+  }
+
+  .clients-carousel {
+    max-width: 100%;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+  }
+
+  .clients-carousel .item {
+    height: 80px;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: flex !important;
+  }
+
+  .clients-carousel .item img,
+  .owl-carousel .owl-item img {
+    height: 60px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .clients-slider-wrapper {
+    margin: 24px 1.25rem 0 1.25rem !important;
+    max-width: calc(100vw - 2.5rem);
+  }
+
+  .clients-carousel {
+    max-width: 100%;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+  }
+
+  .clients-carousel .item {
+    height: 60px;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: flex !important;
+  }
+
+  .clients-carousel .item img,
+  .owl-carousel .owl-item img {
+    height: 50px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ===== PRODUCT PAGES MOBILE STYLES ===== */
+/* These styles would be added for product-specific pages if they exist */
+@media (max-width: 767.98px) {
+  /* Product page specific mobile styles can be added here */
+}
+
+@media (max-width: 575.98px) {
+  /* Small mobile product page styles can be added here */
+}
+
+/* ===== CASE STUDY MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  /* Case study specific mobile styles can be added here */
+}
+
+@media (max-width: 575.98px) {
+  /* Small mobile case study styles can be added here */
+}
+
+/* ===== REACH US MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  /* Reach us specific mobile styles can be added here */
+}
+
+@media (max-width: 575.98px) {
+  /* Small mobile reach us styles can be added here */
+}

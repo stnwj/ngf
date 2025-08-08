@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="assets/css/ngf-ecosystem-style.css" />
     <!-- About Us CSS -->
     <link rel="stylesheet" href="assets/css/about-us-style.css" />
+    <!-- Mobile Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/mobile-responsive.css" />
   </head>
   <body class="body-bg-white">
     <?php 
