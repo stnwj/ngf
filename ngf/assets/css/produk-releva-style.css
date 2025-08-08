@@ -1,0 +1,342 @@
+/* produk-releva-style.css */
+.produk-releva-wrapper {
+  display: flex;
+  align-items: flex-start;
+  /* gap: 75px; -- moved to utility class */
+}
+
+.produk-releva-image-container {
+  /* width: 595px; -- moved to utility class */
+  /* height: 770px; -- moved to utility class */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.produk-releva-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.produk-releva-content-kanan {
+  /* margin-top: 70px; -- moved to utility class */
+  flex: 1;
+}
+
+.fitur-list {
+  margin-top: 50px;
+}
+
+.fitur-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.fitur-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.fitur-list-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.fitur-list-text {
+  /* Menggunakan style yang sama dengan caption-keterangan */
+  color: #8e92bc;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .produk-releva-wrapper {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+
+  .produk-releva-image-container {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+    order: 1 !important;
+  }
+
+  .produk-releva-content-kanan {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2 !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css */
+  body .produk-releva-content-kanan.mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .produk-releva-content-kanan.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes */
+  body .mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Center badge and title for mobile */
+  .produk-releva-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .produk-releva-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+
+  .produk-releva-content-kanan .produk-judul-besar {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .produk-releva-content-kanan .produk-judul-besar .judul-gradasi,
+  .produk-releva-content-kanan .produk-judul-besar .judul-strip,
+  .produk-releva-content-kanan .produk-judul-besar .judul-tebal {
+    text-align: center !important;
+  }
+
+  /* Ensure description and features remain left-aligned */
+  .produk-releva-content-kanan .caption-keterangan {
+    text-align: left !important;
+  }
+
+  .produk-releva-content-kanan .fitur-list {
+    text-align: left !important;
+  }
+
+  /* Fix text overlapping */
+  .produk-releva-content-kanan .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Center the link/button */
+  .produk-releva-content-kanan .link-visit {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-releva-wrapper {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+  }
+
+  .produk-releva-image-container {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+    order: 1 !important;
+  }
+
+  .produk-releva-content-kanan {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2 !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css for small mobile */
+  body .produk-releva-content-kanan.mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .produk-releva-content-kanan.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes for small mobile */
+  body .mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Center badge and title for small mobile */
+  .produk-releva-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 0.75rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .produk-releva-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+
+  .produk-releva-content-kanan .produk-judul-besar {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .produk-releva-content-kanan .produk-judul-besar .judul-gradasi,
+  .produk-releva-content-kanan .produk-judul-besar .judul-strip,
+  .produk-releva-content-kanan .produk-judul-besar .judul-tebal {
+    text-align: center !important;
+  }
+
+  /* Ensure description and features remain left-aligned */
+  .produk-releva-content-kanan .caption-keterangan {
+    text-align: left !important;
+  }
+
+  .produk-releva-content-kanan .fitur-list {
+    text-align: left !important;
+  }
+
+  /* Fix text overlapping for small mobile */
+  .produk-releva-content-kanan .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+  }
+
+  /* Center the link/button */
+  .produk-releva-content-kanan .link-visit {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Override container-full-width untuk produk releva */
+@media (max-width: 767.98px) {
+  .produk-releva-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk produk releva */
+  .produk-releva-wrapper {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-releva-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk produk releva */
+  .produk-releva-wrapper {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Override judul-produk.css untuk produk releva mobile */
+@media (max-width: 767.98px) {
+  .produk-releva-content-kanan .produk-judul-besar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-releva-content-kanan .produk-judul-besar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Override badge-bootstrap.css untuk produk releva mobile */
+@media (max-width: 767.98px) {
+  .produk-releva-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .produk-releva-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-releva-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 0.75rem auto !important;
+  }
+
+  .produk-releva-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+/* Force override dimens-style-optimized.css for produk releva mobile */
+@media (max-width: 767.98px) {
+  body .produk-releva-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .produk-releva-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+  }
+}

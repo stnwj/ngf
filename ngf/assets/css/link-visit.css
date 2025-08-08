@@ -1,0 +1,26 @@
+/* Link Visit Styles */
+.link-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ff6a4f;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.link-visit:hover {
+  text-decoration: underline;
+  color: #ff6a4f;
+}
+.link-visit-text {
+  color: #ff6a4f;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+}
+.link-visit-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}

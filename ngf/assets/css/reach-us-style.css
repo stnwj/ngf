@@ -1,0 +1,300 @@
+/* reach-us-style.css */
+.reach-us-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textfield-group {
+  width: 100vw;
+  margin-left: calc(-70px);
+  margin-right: calc(-70px);
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.textfield-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.textfield-row .textfield-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.textarea-section {
+  width: 100vw;
+  margin-left: calc(-70px);
+  margin-right: calc(-70px);
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  /* Override ml-70 and mr-70 classes for mobile */
+  body .ml-70 {
+    margin-left: 1.5rem !important;
+  }
+
+  body .mr-70 {
+    margin-right: 1.5rem !important;
+  }
+
+  body .textfield-group {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body .textfield-row {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100% !important;
+  }
+
+  body .textfield-row .textfield-container {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  body .textfield-input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 100% !important;
+  }
+
+  body .textarea-section {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body .textarea-container {
+    width: 100% !important;
+  }
+
+  body .textarea-input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 100% !important;
+  }
+
+  body .button-section {
+    text-align: center !important;
+  }
+
+  body .btn-demo {
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Override ml-70 and mr-70 classes for small mobile */
+  body .ml-70 {
+    margin-left: 1.5rem !important;
+  }
+
+  body .mr-70 {
+    margin-right: 1.5rem !important;
+  }
+
+  /* Force full width for form elements */
+  body #reach-us .textfield-group {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body #reach-us .textfield-row {
+    gap: 0.75rem !important;
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  body #reach-us .textfield-row .textfield-container {
+    width: 100% !important;
+    flex: none !important;
+    min-width: 100% !important;
+  }
+
+  body #reach-us .textfield-input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body #reach-us .textarea-section {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body #reach-us .textarea-container {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  body #reach-us .textarea-input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body #reach-us .btn-demo {
+    max-width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 14px !important;
+  }
+
+  /* Ensure no container restrictions */
+  body .container,
+  body .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Ultra specific overrides for input fields */
+  body #reach-us .textfield-input,
+  body #reach-us .textarea-input {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body #reach-us .textfield-container,
+  body #reach-us .textarea-container {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Override any Bootstrap or other CSS */
+  body #reach-us input[type="text"],
+  body #reach-us textarea {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Force all form elements to be full width */
+  body #reach-us .contact-form {
+    width: 100% !important;
+  }
+
+  body #reach-us .contact-form * {
+    box-sizing: border-box !important;
+  }
+
+  /* Override any possible width restrictions */
+  body #reach-us .textfield-input,
+  body #reach-us .textarea-input,
+  body #reach-us input,
+  body #reach-us textarea {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Override 100vw and negative margins from desktop */
+  body #reach-us .textfield-group,
+  body #reach-us .textarea-section {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Force viewport width to be ignored */
+  body #reach-us * {
+    width: auto !important;
+  }
+
+  body #reach-us .textfield-group,
+  body #reach-us .textarea-section,
+  body #reach-us .textfield-row,
+  body #reach-us .textfield-container,
+  body #reach-us .textarea-container,
+  body #reach-us .textfield-input,
+  body #reach-us .textarea-input {
+    width: 100% !important;
+  }
+
+  /* Override any Bootstrap grid or flexbox restrictions */
+  body #reach-us .row,
+  body #reach-us .col,
+  body #reach-us .col-* {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  /* Force all form elements to be full width with highest specificity */
+  body #reach-us div[class*="textfield"],
+  body #reach-us div[class*="textarea"],
+  body #reach-us input,
+  body #reach-us textarea {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure badge star appears on mobile */
+  body #reach-us .badge-layout-icon-mobile {
+    display: inline-block !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    background-image: url("../images/star.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-left: 0.25rem !important;
+    vertical-align: middle !important;
+  }
+
+  /* Center badge and title for mobile */
+  body #reach-us .reach-us-content .badge-layout {
+    align-self: center !important;
+    margin: 0 auto !important;
+  }
+
+  body #reach-us .reach-us-content .mt-20 {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  body #reach-us .reach-us-content .produk-judul-besar {
+    text-align: center !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  body #reach-us .reach-us-content .judul-gradasi,
+  body #reach-us .reach-us-content .judul-strip,
+  body #reach-us .reach-us-content .judul-tebal {
+    text-align: center !important;
+  }
+}

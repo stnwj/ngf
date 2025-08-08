@@ -1,0 +1,81 @@
+/* textarea.css */
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.textarea-input {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #141522;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dce4ff;
+  padding: 0;
+  outline: none;
+  font-family: inherit;
+  resize: none;
+  min-height: 144px; /* 4 rows * 36px line-height */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textarea-input::placeholder {
+  color: #888888;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.textarea-input:focus {
+  border-bottom-color: #141522;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .textarea-container {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .textarea-input {
+    font-size: 16px !important;
+    line-height: 32px !important;
+    min-height: 128px !important; /* 4 rows * 32px line-height */
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .textarea-input::placeholder {
+    font-size: 16px !important;
+    line-height: 32px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .textarea-container {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .textarea-input {
+    font-size: 14px !important;
+    line-height: 28px !important;
+    min-height: 112px !important; /* 4 rows * 28px line-height */
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .textarea-input::placeholder {
+    font-size: 14px !important;
+    line-height: 28px !important;
+  }
+}

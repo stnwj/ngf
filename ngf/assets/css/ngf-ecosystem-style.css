@@ -1,0 +1,124 @@
+/* NGF Ecosystem Styles */
+
+.ecosystem-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #141522;
+  margin-bottom: 0;
+}
+
+.ecosystem-subtitle {
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.ecosystem-description {
+  font-style: italic;
+}
+
+/* Ecosystem Section Scroll Margin */
+#ecosystem {
+  /* scroll-margin-top: 25px; - dipindahkan ke dimens-style.css sebagai .scroll-margin-top-25 */
+}
+
+.ecosystem-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: start;
+  /* gap: 16px; - dipindahkan ke dimens-style.css sebagai .gap-16 */
+}
+
+.ecosystem-feature-icon {
+  /* width: 40px; - dipindahkan ke dimens-style.css sebagai .w-40 */
+  /* height: 40px; - dipindahkan ke dimens-style.css sebagai .h-40 */
+  margin-bottom: 0;
+  flex-shrink: 0;
+  /* margin-top: 2px; - dipindahkan ke dimens-style.css sebagai .mt-2 */
+}
+
+.ecosystem-feature-content {
+  flex: 1;
+}
+
+.ecosystem-feature-title {
+  color: #161c2d;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  /* margin-bottom: 4px; - dipindahkan ke dimens-style.css sebagai .mb-4 */
+}
+
+.ecosystem-feature-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #54577a;
+  /* margin-top: 8px; - dipindahkan ke dimens-style.css sebagai .mt-8 */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  #ecosystem {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+
+  .ecosystem-title {
+    font-size: 28px !important;
+  }
+
+  .ecosystem-subtitle {
+    font-size: 28px !important;
+  }
+
+  .ecosystem-feature {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .ecosystem-feature-icon {
+    margin-bottom: 1rem !important;
+  }
+
+  .ecosystem-feature-title {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .ecosystem-feature-description {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #ecosystem {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+
+  .ecosystem-title {
+    font-size: 24px !important;
+  }
+
+  .ecosystem-subtitle {
+    font-size: 24px !important;
+  }
+
+  .ecosystem-feature-title {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .ecosystem-feature-description {
+    font-size: 13px !important;
+  }
+}

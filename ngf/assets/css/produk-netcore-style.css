@@ -1,0 +1,445 @@
+/* produk-netcore-style.css */
+.produk-netcore-wrapper {
+  display: flex;
+  align-items: flex-start;
+  /* gap: 75px; -- moved to utility class */
+}
+
+.produk-netcore-content-kiri {
+  flex: 1;
+  /* Konten akan ditambahkan di sini */
+}
+
+.produk-netcore-image-container {
+  /* width: 595px; -- moved to utility class */
+  /* height: 770px; -- moved to utility class */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.produk-netcore-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.netcore-icon-overlay {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.netcore-icon {
+  width: 311px;
+  height: 58px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: block;
+}
+
+.netcore-image-overlay {
+  position: absolute;
+  top: 203px; /* 70px + 65px + 58px (icon height) + 10px spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.netcore-image {
+  width: 524px;
+  height: 385px;
+  display: block;
+}
+
+.fitur-list {
+  margin-top: 50px;
+}
+
+.fitur-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.fitur-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.fitur-list-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .produk-netcore-wrapper {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+
+  .produk-netcore-image-container {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+    order: 1 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes */
+  body .produk-netcore-image-container.w-595 {
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+
+  body .produk-netcore-image-container.h-770 {
+    height: auto !important;
+  }
+
+  .produk-netcore-content-kiri {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2 !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css */
+  body .produk-netcore-content-kiri.ml-70 {
+    margin-left: 0 !important;
+  }
+
+  body .produk-netcore-content-kiri.mr-75 {
+    margin-right: 0 !important;
+  }
+
+  body .produk-netcore-content-kiri.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes */
+  body .ml-70 {
+    margin-left: 0 !important;
+  }
+
+  body .mr-75 {
+    margin-right: 0 !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Center badge and title for mobile */
+  .produk-netcore-content-kiri .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .produk-netcore-content-kiri .badge-layout-text {
+    text-align: center !important;
+  }
+
+  .produk-netcore-content-kiri .produk-judul-besar {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .produk-netcore-content-kiri .produk-judul-besar .judul-gradasi,
+  .produk-netcore-content-kiri .produk-judul-besar .judul-strip,
+  .produk-netcore-content-kiri .produk-judul-besar .judul-tebal {
+    text-align: center !important;
+  }
+
+  /* Ensure description and features remain left-aligned */
+  .produk-netcore-content-kiri .caption-keterangan {
+    text-align: left !important;
+  }
+
+  .produk-netcore-content-kiri .fitur-list {
+    text-align: left !important;
+  }
+
+  /* Fix text overlapping */
+  .produk-netcore-content-kiri .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Center the link/button */
+  .produk-netcore-content-kiri .link-visit {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Adjust overlays for mobile */
+  .netcore-icon-overlay {
+    top: 12px !important;
+  }
+
+  .netcore-icon {
+    width: 160px !important;
+    height: 30px !important;
+  }
+
+  .netcore-image-overlay {
+    top: 45px !important;
+  }
+
+  .netcore-image {
+    width: 220px !important;
+    height: 162px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-netcore-wrapper {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+  }
+
+  .produk-netcore-image-container {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+    order: 1 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes for small mobile */
+  body .produk-netcore-image-container.w-595 {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+
+  body .produk-netcore-image-container.h-770 {
+    height: auto !important;
+  }
+
+  .produk-netcore-content-kiri {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2 !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css for small mobile */
+  body .produk-netcore-content-kiri.ml-70 {
+    margin-left: 0 !important;
+  }
+
+  body .produk-netcore-content-kiri.mr-75 {
+    margin-right: 0 !important;
+  }
+
+  body .produk-netcore-content-kiri.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes for small mobile */
+  body .ml-70 {
+    margin-left: 0 !important;
+  }
+
+  body .mr-75 {
+    margin-right: 0 !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Center badge and title for small mobile */
+  .produk-netcore-content-kiri .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 0.75rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .produk-netcore-content-kiri .badge-layout-text {
+    text-align: center !important;
+  }
+
+  .produk-netcore-content-kiri .produk-judul-besar {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .produk-netcore-content-kiri .produk-judul-besar .judul-gradasi,
+  .produk-netcore-content-kiri .produk-judul-besar .judul-strip,
+  .produk-netcore-content-kiri .produk-judul-besar .judul-tebal {
+    text-align: center !important;
+  }
+
+  /* Ensure description and features remain left-aligned */
+  .produk-netcore-content-kiri .caption-keterangan {
+    text-align: left !important;
+  }
+
+  .produk-netcore-content-kiri .fitur-list {
+    text-align: left !important;
+  }
+
+  /* Fix text overlapping for small mobile */
+  .produk-netcore-content-kiri .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+  }
+
+  /* Center the link/button */
+  .produk-netcore-content-kiri .link-visit {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Adjust overlays for small mobile */
+  .netcore-icon-overlay {
+    top: 10px !important;
+  }
+
+  .netcore-icon {
+    width: 120px !important;
+    height: 22px !important;
+  }
+
+  .netcore-image-overlay {
+    top: 40px !important;
+  }
+
+  .netcore-image {
+    width: 200px !important;
+    height: 147px !important;
+  }
+}
+
+/* Override container-full-width untuk produk netcore */
+@media (max-width: 767.98px) {
+  .produk-netcore-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk produk netcore */
+  .produk-netcore-wrapper {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-netcore-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk produk netcore */
+  .produk-netcore-wrapper {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Override judul-produk.css untuk produk netcore mobile */
+@media (max-width: 767.98px) {
+  .produk-netcore-content-kiri .produk-judul-besar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-netcore-content-kiri .produk-judul-besar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Override badge-bootstrap.css untuk produk netcore mobile */
+@media (max-width: 767.98px) {
+  .produk-netcore-content-kiri .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .produk-netcore-content-kiri .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-netcore-content-kiri .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 0.75rem auto !important;
+  }
+
+  .produk-netcore-content-kiri .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+/* Force override dimens-style-optimized.css for produk netcore mobile */
+@media (max-width: 767.98px) {
+  body .produk-netcore-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .produk-netcore-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+  }
+}

@@ -1,0 +1,286 @@
+/* About Us Styles */
+
+/* About Section */
+.about-badge-container {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.about-content {
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about-title-container {
+  width: 545px;
+}
+
+.about-title {
+  display: block;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #141522;
+}
+
+.about-title-gradient {
+  display: block;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  background: linear-gradient(98.13deg, #ef5944 0%, #974dde 97.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.about-image-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateX(60px);
+}
+
+.about-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("../images/dummy_image1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-description {
+  max-width: 500px;
+}
+
+/* Accordion Section */
+.accordion-section {
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.accordion-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.accordion-image-container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accordion-image {
+  width: 545px;
+  height: 463px;
+  border-radius: 35px;
+  border: 1px solid #e0e3eb;
+  opacity: 1;
+  object-fit: cover;
+}
+
+/* Accordion Items */
+.collapse-item-style {
+  padding: 32px 0;
+  border-bottom: 1px solid #e0e3eb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.judul-collapse-item-style {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #141522;
+}
+
+.icon-plus-minus-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.custom-accordion-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.custom-accordion-content {
+  display: none;
+}
+
+.custom-accordion-content.open {
+  display: block;
+}
+
+/* Responsive About Us Styles */
+@media (max-width: 991.98px) {
+  .about-badge-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .about-content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .about-title-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .about-title,
+  .about-title-gradient {
+    font-size: 28px;
+  }
+
+  .about-image-container {
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .about-description {
+    max-width: 100%;
+  }
+
+  .accordion-section {
+    margin-top: 3rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .accordion-container {
+    order: 2;
+  }
+
+  .accordion-image-container {
+    order: 1;
+    text-align: center;
+  }
+
+  .accordion-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .collapse-item-style {
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
+
+  .judul-collapse-item-style {
+    font-size: 20px;
+  }
+
+  .custom-accordion-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .about-image-container {
+    transform: none !important;
+  }
+  body .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+  body .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  body .about-badge-container {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  body .about-content {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+  body .accordion-section {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    width: calc(100% - 2rem) !important;
+  }
+  body .accordion-container {
+    width: 100% !important;
+  }
+  body .collapse-item-clik {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  body .about-image-container {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+  body .about-image {
+    width: 100px !important;
+    height: 100px !important;
+    margin-left: 0.5rem !important;
+    flex-shrink: 0 !important;
+  }
+  body .about-description {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  body .about-title,
+  body .about-title-gradient {
+    font-size: 24px !important;
+  }
+  body .accordion-image {
+    max-width: 100% !important;
+    border-radius: 15px !important;
+  }
+  body .collapse-item-style {
+    padding: 1rem 0.5rem !important;
+  }
+  body .judul-collapse-item-style {
+    font-size: 18px !important;
+  }
+  body .custom-accordion-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  body .custom-accordion-content {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+}

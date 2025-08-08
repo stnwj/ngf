@@ -1,0 +1,192 @@
+/* CSS untuk judul_produk.php */
+.produk-judul-besar {
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  gap: 0;
+  white-space: normal;
+}
+
+.judul-baris-pertama {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.judul-baris-kedua {
+  display: flex;
+  align-items: baseline;
+  margin-top: 4px;
+}
+
+.produk-judul-besar .judul-gradasi {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  display: inline-block;
+  background: linear-gradient(90deg, #ff5c5c 0%, #a259ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.produk-judul-besar .judul-tebal {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #141522;
+  display: inline-block;
+}
+
+.judul-strip {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #141522;
+  display: inline-block;
+}
+
+.judul-strip.with-gradient {
+  background: linear-gradient(90deg, #ff5c5c 0%, #a259ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.judul-gradasi.no-gradient {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #141522 !important;
+  background-clip: initial !important;
+  text-fill-color: initial !important;
+  color: #141522 !important;
+}
+
+/* CSS khusus untuk memastikan "with AI" tetap menempel dengan "Transforming Customer Service" */
+.judul-baris-pertama .judul-gradasi,
+.judul-baris-pertama .judul-strip {
+  display: inline !important;
+}
+
+/* CSS khusus untuk case study - memastikan margin tidak dioverride */
+.case-study-content .produk-judul-besar {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .produk-judul-besar {
+    font-size: 26px !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 0 2.5rem 0 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+  .judul-baris-pertama {
+    display: inline !important;
+    white-space: normal !important;
+  }
+  .judul-baris-pertama .judul-gradasi,
+  .judul-baris-pertama .judul-strip {
+    display: inline !important;
+    white-space: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    letter-spacing: 0 !important;
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    vertical-align: baseline !important;
+  }
+  .judul-baris-pertama .judul-strip {
+    margin-left: -0.25em !important;
+  }
+
+  .judul-baris-kedua {
+    margin-top: 0.25rem !important;
+  }
+
+  .produk-judul-besar .judul-gradasi {
+    font-size: 28px !important;
+  }
+
+  .produk-judul-besar .judul-tebal {
+    font-size: 28px !important;
+  }
+
+  .judul-strip {
+    font-size: 28px !important;
+  }
+
+  .judul-strip.with-gradient {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-judul-besar {
+    font-size: 20px !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 0 2rem 0 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+  .judul-baris-pertama {
+    display: inline !important;
+    white-space: normal !important;
+  }
+  .judul-baris-pertama .judul-gradasi,
+  .judul-baris-pertama .judul-strip {
+    display: inline !important;
+    white-space: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    letter-spacing: 0 !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+    vertical-align: baseline !important;
+  }
+  .judul-baris-pertama .judul-strip {
+    margin-left: -0.25em !important;
+  }
+
+  .judul-baris-kedua {
+    margin-top: 0.125rem !important;
+  }
+
+  .produk-judul-besar .judul-gradasi {
+    font-size: 24px !important;
+  }
+
+  .produk-judul-besar .judul-tebal {
+    font-size: 24px !important;
+  }
+
+  .judul-strip {
+    font-size: 24px !important;
+  }
+
+  .judul-strip.with-gradient {
+    font-size: 24px !important;
+  }
+}
+
+/* CSS yang sangat spesifik untuk case study mobile */
+@media (max-width: 767.98px) {
+  /* Hapus aturan berikut agar judul tidak ada margin kiri-kanan khusus case study di mobile */
+  /* .case-study-content .produk-judul-besar { margin-left: 1rem !important; margin-right: 1rem !important; } */
+  /* html body .case-study-content .produk-judul-besar { margin-left: 1rem !important; margin-right: 1rem !important; } */
+}
+
+@media (max-width: 575.98px) {
+  /* Hapus aturan berikut agar judul tidak ada margin kiri-kanan khusus case study di mobile */
+  /* .case-study-content .produk-judul-besar { margin-left: 0.75rem !important; margin-right: 0.75rem !important; } */
+  /* html body .case-study-content .produk-judul-besar { margin-left: 0.75rem !important; margin-right: 0.75rem !important; } */
+}

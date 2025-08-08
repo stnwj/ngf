@@ -1,0 +1,414 @@
+.produk-hera-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.produk-hera-image-container {
+  position: relative;
+  width: 595px;
+  min-width: 595px;
+  max-width: 595px;
+  height: 770px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logo-hera-absolute {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  height: 60px;
+  width: auto;
+  pointer-events: none;
+}
+.dashboard-img {
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  width: calc(100% - 80px);
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px #0000001a;
+  z-index: 3;
+  background: #fff;
+  display: block;
+  object-fit: contain;
+  max-height: unset;
+}
+.robot-hera-img {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  z-index: 4;
+  height: 340px;
+  width: auto;
+  pointer-events: none;
+}
+.produk-hera-img {
+  display: block;
+  width: 595px;
+  height: 770px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.produk-hera-content-kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 420px;
+  flex: 1;
+}
+.produk-oval-slicing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 45px;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 1px solid #bac8ff;
+  background: #fff;
+  opacity: 1;
+  width: fit-content;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px 0 #0001;
+}
+.produk-oval-slicing .star-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.produk-oval-slicing .oval-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #141522;
+  font-family: inherit;
+  font-style: Medium;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .produk-hera-wrapper {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+
+  .produk-hera-image-container {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: unset !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+    order: 1 !important;
+  }
+
+  .produk-hera-content-kanan {
+    width: 100% !important;
+    min-width: unset !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2 !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css */
+  body .produk-hera-content-kanan.mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .produk-hera-content-kanan.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes */
+  body .mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Center badge and title for mobile */
+  .produk-hera-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .produk-hera-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+
+  .produk-hera-content-kanan .produk-judul-besar {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .produk-hera-content-kanan .produk-judul-besar .judul-gradasi,
+  .produk-hera-content-kanan .produk-judul-besar .judul-strip,
+  .produk-hera-content-kanan .produk-judul-besar .judul-tebal {
+    text-align: center !important;
+  }
+
+  /* Ensure description and accordion remain left-aligned */
+  .produk-hera-content-kanan .caption-keterangan {
+    text-align: left !important;
+  }
+
+  .produk-hera-content-kanan .collapse-item-clik {
+    text-align: left !important;
+  }
+
+  /* Fix text overlapping */
+  .produk-hera-content-kanan .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Center the link/button */
+  .produk-hera-content-kanan .link-visit {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Adjust overlays for mobile */
+  .logo-hera-absolute {
+    top: 20px !important;
+    height: 40px !important;
+  }
+
+  .dashboard-img {
+    top: 80px !important;
+    left: 20px !important;
+    width: calc(100% - 40px) !important;
+  }
+
+  .robot-hera-img {
+    top: 45px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-hera-wrapper {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+  }
+
+  .produk-hera-image-container {
+    width: 100% !important;
+    max-width: 280px !important;
+    min-width: unset !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+    order: 1 !important;
+  }
+
+  .produk-hera-content-kanan {
+    width: 100% !important;
+    min-width: unset !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    order: 2 !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css for small mobile */
+  body .produk-hera-content-kanan.mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .produk-hera-content-kanan.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes for small mobile */
+  body .mr-70 {
+    margin-right: 0 !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Center badge and title for small mobile */
+  .produk-hera-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 0.75rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .produk-hera-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+
+  .produk-hera-content-kanan .produk-judul-besar {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .produk-hera-content-kanan .produk-judul-besar .judul-gradasi,
+  .produk-hera-content-kanan .produk-judul-besar .judul-strip,
+  .produk-hera-content-kanan .produk-judul-besar .judul-tebal {
+    text-align: center !important;
+  }
+
+  /* Ensure description and accordion remain left-aligned */
+  .produk-hera-content-kanan .caption-keterangan {
+    text-align: left !important;
+  }
+
+  .produk-hera-content-kanan .collapse-item-clik {
+    text-align: left !important;
+  }
+
+  /* Fix text overlapping for small mobile */
+  .produk-hera-content-kanan .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+  }
+
+  /* Center the link/button */
+  .produk-hera-content-kanan .link-visit {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Adjust overlays for small mobile */
+  .logo-hera-absolute {
+    top: 15px !important;
+    height: 30px !important;
+  }
+
+  .dashboard-img {
+    top: 60px !important;
+    left: 15px !important;
+    width: calc(100% - 30px) !important;
+  }
+
+  .robot-hera-img {
+    top: 35px !important;
+    height: 150px !important;
+  }
+}
+
+/* Override container-full-width untuk produk hera */
+@media (max-width: 767.98px) {
+  .produk-hera-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk produk hera */
+  .produk-hera-wrapper {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-hera-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk produk hera */
+  .produk-hera-wrapper {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Override judul-produk.css untuk produk hera mobile */
+@media (max-width: 767.98px) {
+  .produk-hera-content-kanan .produk-judul-besar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-hera-content-kanan .produk-judul-besar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Override badge-bootstrap.css untuk produk hera mobile */
+@media (max-width: 767.98px) {
+  .produk-hera-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .produk-hera-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-hera-content-kanan .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 0.75rem auto !important;
+  }
+
+  .produk-hera-content-kanan .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+/* Force override dimens-style-optimized.css for produk hera mobile */
+@media (max-width: 767.98px) {
+  body .produk-hera-image-container {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: unset !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .produk-hera-image-container {
+    width: 100% !important;
+    max-width: 280px !important;
+    min-width: unset !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important;
+  }
+}

@@ -1,0 +1,78 @@
+/* textfield.css */
+.textfield-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+}
+
+.textfield-input {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #141522;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dce4ff;
+  padding: 0;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textfield-input::placeholder {
+  color: #888888;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.textfield-input:focus {
+  border-bottom-color: #141522;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .textfield-container {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .textfield-input {
+    font-size: 16px !important;
+    line-height: 32px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .textfield-input::placeholder {
+    font-size: 16px !important;
+    line-height: 32px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .textfield-container {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .textfield-input {
+    font-size: 14px !important;
+    line-height: 28px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .textfield-input::placeholder {
+    font-size: 14px !important;
+    line-height: 28px !important;
+  }
+}

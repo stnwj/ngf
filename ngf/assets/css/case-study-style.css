@@ -1,0 +1,472 @@
+/* case-study-style.css */
+.case-study-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 55px;
+}
+
+.case-study-image-container {
+  width: 360px;
+  height: 591px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.case-study-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.case-study-content {
+  flex: 1;
+}
+
+.case-study-subtitle {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #141522;
+  font-family: inherit;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767.98px) {
+  .case-study-wrapper {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+
+  .case-study-image-container {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 360/591 !important;
+  }
+
+  .case-study-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .case-study-content {
+    width: 100% !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    margin-top: 0 !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css */
+  body .case-study-content.ml-55 {
+    margin-left: 1rem !important;
+  }
+
+  body .case-study-content.mr-70 {
+    margin-right: 1rem !important;
+  }
+
+  body .case-study-content.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes */
+  body .ml-55 {
+    margin-left: 1rem !important;
+  }
+
+  body .mr-70 {
+    margin-right: 1rem !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  .case-study-subtitle {
+    font-size: 28px !important;
+    line-height: 140% !important;
+  }
+
+  /* Center badge and title for mobile */
+  .case-study-content .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .case-study-content .badge-layout-text {
+    text-align: center !important;
+  }
+
+  /* Ensure subtitle and description remain left-aligned */
+  .case-study-content .case-study-subtitle {
+    text-align: left !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .case-study-content .caption-keterangan {
+    text-align: left !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  /* Fix text overlapping */
+  .case-study-content p {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .case-study-content .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+  }
+
+  .case-study-content .caption-keterangan p {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .case-study-wrapper {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+  }
+
+  .case-study-image-container {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    aspect-ratio: 360/591 !important;
+  }
+
+  .case-study-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .case-study-content {
+    width: 100% !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+    margin-top: 0 !important;
+    padding: 0 0.5rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Override Bootstrap margin classes and dimens-style-optimized.css for small mobile */
+  body .case-study-content.ml-55 {
+    margin-left: 0.75rem !important;
+  }
+
+  body .case-study-content.mr-70 {
+    margin-right: 0.75rem !important;
+  }
+
+  body .case-study-content.mt-70 {
+    margin-top: 0 !important;
+  }
+
+  /* Override dimens-style-optimized.css classes for small mobile */
+  body .ml-55 {
+    margin-left: 0.75rem !important;
+  }
+
+  body .mr-70 {
+    margin-right: 0.75rem !important;
+  }
+
+  body .mt-70 {
+    margin-top: 0 !important;
+  }
+
+  .case-study-subtitle {
+    font-size: 24px !important;
+    line-height: 130% !important;
+  }
+
+  /* Center badge and title for small mobile */
+  .case-study-content .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 0.75rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .case-study-content .badge-layout-text {
+    text-align: center !important;
+  }
+
+  /* Ensure subtitle and description remain left-aligned */
+  .case-study-content .case-study-subtitle {
+    text-align: left !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  .case-study-content .caption-keterangan {
+    text-align: left !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  /* Fix text overlapping for small mobile */
+  .case-study-content p {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 14px !important;
+  }
+
+  .case-study-content .caption-keterangan {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+  }
+
+  .case-study-content .caption-keterangan p {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Override container-full-width untuk case study */
+@media (max-width: 767.98px) {
+  .case-study-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk case study */
+  .case-study-wrapper {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .case-study-wrapper .container-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Tambahkan padding khusus untuk case study */
+  .case-study-wrapper {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Override judul-produk.css untuk case study mobile */
+@media (max-width: 767.98px) {
+  .case-study-content .produk-judul-besar {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .case-study-content .produk-judul-besar {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Override badge-bootstrap.css untuk case study mobile */
+@media (max-width: 767.98px) {
+  .case-study-content .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .case-study-content .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .case-study-content .badge-layout {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto 0.75rem auto !important;
+  }
+
+  .case-study-content .badge-layout-text {
+    text-align: center !important;
+  }
+}
+
+/* CSS yang sangat spesifik untuk memastikan margin judul case study tidak dioverride */
+@media (max-width: 767.98px) {
+  html body .case-study-content .produk-judul-besar,
+  html body .case-study-content .produk-judul-besar * {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  /* Override semua CSS lain yang mungkin mengatur margin ke 0 */
+  html body .case-study-content .produk-judul-besar.judul-baris-pertama,
+  html body .case-study-content .produk-judul-besar .judul-gradasi,
+  html body .case-study-content .produk-judul-besar .judul-strip,
+  html body .case-study-content .produk-judul-besar .judul-tebal {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  /* CSS yang sangat spesifik dengan selector yang lebih kuat */
+  html body div.case-study-content div.produk-judul-besar {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  /* Override untuk semua elemen dalam judul */
+  html body div.case-study-content div.produk-judul-besar div,
+  html body div.case-study-content div.produk-judul-besar span {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html body .case-study-content .produk-judul-besar,
+  html body .case-study-content .produk-judul-besar * {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  /* Override semua CSS lain yang mungkin mengatur margin ke 0 */
+  html body .case-study-content .produk-judul-besar.judul-baris-pertama,
+  html body .case-study-content .produk-judul-besar .judul-gradasi,
+  html body .case-study-content .produk-judul-besar .judul-strip,
+  html body .case-study-content .produk-judul-besar .judul-tebal {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  /* CSS yang sangat spesifik dengan selector yang lebih kuat */
+  html body div.case-study-content div.produk-judul-besar {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  /* Override untuk semua elemen dalam judul */
+  html body div.case-study-content div.produk-judul-besar div,
+  html body div.case-study-content div.produk-judul-besar span {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .case-study-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .case-study-image-container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    position: relative;
+    overflow: hidden !important;
+  }
+  .case-study-img {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: unset !important;
+    object-position: center !important;
+    background: #fff !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .case-study-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .case-study-image-container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    position: relative;
+    overflow: hidden !important;
+  }
+  .case-study-img {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: unset !important;
+    object-position: center !important;
+    background: #fff !important;
+  }
+}

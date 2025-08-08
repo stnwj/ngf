@@ -1,0 +1,160 @@
+{
+  "body": {
+    "case_study": {
+      "oval_text": "Case Study",
+      "judul_utama": "Transforming Customer Service",
+      "judul_strip": "with AI",
+      "judul_tebal": "",
+      "subtitle": "How a Digital Bank Slashed Response Times and Lightened Call Center Load",
+      "deskripsi": "By integrating HERA's AI Chatbot, a leading national digital bank successfully reduced the load on their call center by 45%, allowing their human agents to focus on more complex cases.\n\nMore impressively, customer response time dropped from an average of 4 minutes to under 10 seconds. With 24/7 availability and instant, accurate responses, the AI-powered solution helped boost customer satisfaction, operational efficiency, and overall digital experience—proving just how impactful smart automation can be in modern banking."
+    },
+    "reach_us": {
+      "oval_text": "Reach Us!",
+      "judul_utama": "Here to Help You,",
+      "judul_strip": "Reach Out Anytime!",
+      "judul_tebal": ""
+    },
+    "our_clients": {
+      "judul": "Our Esteemed Clients"
+    },
+    "hero": {
+      "badge_text": "Transforming The Future of Blissful Customer Experience",
+      "title_line1": "Elevate Every Touchpoint",
+      "title_line2": "of",
+      "title_gradient": "Your Customer Journey",
+      "description": "Seamlessly turn first impressions into lifelong advocacy with a single, AI-powered ecosystem built for sustainable competitive advantage.",
+      "button_primary": "Book a Strategy Call",
+      "button_secondary": "— Talk to our CX specialists today",
+      "card1_title": "Transform Your CS Recorder into Analytics",
+      "card2_badge1": "Advanced AI Solutions",
+      "card2_badge2": "Smarter Tech",
+      "card2_badges_bottom": ["AI Chatbot", "Virtual Assistant", "Email Automation", "Automated Conversations", "And many more..."]
+    },
+    "about": {
+      "badge_text": "About Us",
+      "title_line1": "Why Customer",
+      "title_line2": "Experience?",
+      "description": "Customers are your most important stakeholders. Loyal, long‑term customers. NGF focuses on CX because what gets measured, optimized, and personalized wins.",
+      "accordion_items": [
+        {
+          "title": "Deliver the highest profitability",
+          "content": "Satisfied customers are more likely to repurchase, upgrade, and stay longer, increasing their lifetime value and overall contribution to your bottom line."
+        },
+        {
+          "title": "Become brand advocates who multiply repeat business",
+          "content": "Happy customers don’t just come back — they bring others with them, driving organic growth through referrals and social proof."
+        },
+        {
+          "title": "Reduce acquisition costs over time",
+          "content": "With stronger retention and word‑of‑mouth promotion, businesses can rely less on costly advertising and focus more on relationship-driven growth."
+        }
+      ]
+    },
+    "ecosystem": {
+      "title": "The",
+      "subtitle": "NGF Ecosystem",
+      "description": "\"From Awareness to Advocacy, every step can be managed and shaped.\"",
+      "features": [
+        {
+          "title": "Data Collection & Tracking",
+          "description": "Capture behaviors across ads, web, purchase points, and loyalty"
+        },
+        {
+          "title": "Journey Optimization",
+          "description": "Advanced marketing technology orchestrates the perfect next action"
+        },
+        {
+          "title": "Conversion & Retention",
+          "description": "Close the loop with AI agents that transact, upsell, and retain without friction"
+        }
+      ]
+    }
+  },
+  "produk": {
+    "hera": {
+      "oval_text": "Indonesia's First Agentic Chatbot",
+      "judul_utama": "HERA",
+      "judul_strip": "– AI Sales & Service",
+      "judul_tebal": "Platform",
+      "accordion": [
+        {
+          "title": "Outbound–Ready AI Agent",
+          "content": "HERA's outbound AI agent proactively reaches customers with personalized offers and reminders across multiple channels. It minimizes manual effort and drives engagement with timely, data-driven actions."
+        },
+        {
+          "title": "Inbound Contact–Center Reinvention",
+          "content": "HERA simplifies support operations by combining AI-driven conversations, ticketing, and transactions in one platform. Built on Carre’s CX expertise, it delivers fast, consistent service at scale. Backed by 25 years of contact center experience."
+        }
+      ],
+      "visit_text": "Visit HERA"
+    },
+    "konvergence": {
+      "oval_text": "Customer & Product Platforms",
+      "judul_utama": "Konvergence",
+      "judul_strip": "- Growth Platform",
+      "judul_tebal": "for Scaling Brands",
+      "deskripsi": "End-to-end growth acceleration platform that combines data intelligence, experimentation, and campaign execution. Designed for conversion-ready brands to test, learn, and scale sustainably.",
+      "list_fitur": ["Drive rapid experimentation for better ROI", "Integrated analytics for smarter decisions", "Perfect for brands ready to scale with precision"],
+      "visit_text": "Visit Konvergence"
+    },
+    "releva": {
+      "oval_text": "AI That Knows Your Customers Better",
+      "judul_utama": "Releva",
+      "judul_strip": "– Hyper Personalized",
+      "judul_tebal": "Customer Engagement",
+      "deskripsi": "Deliver predictive, AI-powered personalization across channels with Releva's marketing automation platform. From product recommendations to smart retargeting, Releva helps brands optimize every touchpoint in real time.",
+      "list_fitur": ["Predictive product & content personalization", "Multichannel orchestration made easy", "Boost loyalty with dynamic offers"],
+      "visit_text": "Visit Releva"
+    },
+    "netcore": {
+      "oval_text": "Orchestrate Engagements That Convert",
+      "judul_utama": "Netcore",
+      "judul_strip": "– Journey & Experience",
+      "judul_tebal": "Automation",
+      "deskripsi": "Netcore helps brands create intelligent customer journeys via email, WhatsApp, push notifications, and in-app experiences. Leverage behavioral data to deliver messages that convert.",
+      "list_fitur": ["Journey builder with smart automation", "Omnichannel messaging at scale", "Personalized engagement from the first click"],
+      "visit_text": "Visit Netcore"
+    },
+    "carre_cx": {
+      "oval_text": "Benchmarking Excellence in Every Interaction",
+      "judul_utama": "Carre.CX",
+      "judul_strip": "– Service Quality &",
+      "judul_tebal": "Benchmarking Insights",
+      "deskripsi": "Tap into Indonesia's most comprehensive CX intelligence. From CCSEIT™ to mystery shopping, Carre.CX supports quality assurance, benchmarking, and improvement initiatives across industries.",
+      "list_fitur": ["CCSEIT™, DTPCEIT™, ESEIT™ indices", "Mystery Shopping & SOP-based audits", "Largest CX benchmark database in Indonesia"],
+      "visit_text": "Visit Carre.CX"
+    },
+    "frontier": {
+      "oval_text": "Your AI, Built for Impact",
+      "judul_utama": "Frontier AI Builder",
+      "judul_strip": "– Tailored AI",
+      "judul_tebal": "Solutions",
+      "deskripsi": "Build and deploy powerful AI engines for your business use cases. From chatbots to feedback analysis, Frontier AI Builder creates fully custom, integrated solutions.",
+      "list_fitur": [
+        "AI Virtual Assistant & Smart Chatbot",
+        "AI-Powered Feedback Engine & Sentiment Analysis",
+        "Custom automations with impact tracking",
+        "Conversational AI Platform",
+        "Automation & Workflow Orchestration",
+        "Custom AI Solution"
+      ],
+      "visit_text": "Book a Strategy Call"
+    }
+  },
+  "footer": {
+    "menu": {
+      "about": "About",
+      "case_study": "Case Study",
+      "faq": "FAQ",
+      "contact_us": "Contact Us"
+    },
+    "copyright": "© 2025 NGF. All rights reserved.",
+    "social_media": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}
