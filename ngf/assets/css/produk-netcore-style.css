@@ -94,16 +94,17 @@
 
   .produk-netcore-image-container {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 330px !important;
     height: auto !important;
-    aspect-ratio: 3/4 !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 400px !important; /* sedikit lebih pendek dari tinggi natural */
     order: 1 !important;
   }
 
   /* Override dimens-style-optimized.css classes */
   body .produk-netcore-image-container.w-595 {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 330px !important;
   }
 
   body .produk-netcore-image-container.h-770 {
@@ -198,6 +199,16 @@
     margin-bottom: 2rem !important;
   }
 
+  /* Khusus margin kiri/kanan untuk deskripsi dan list fitur (samakan dengan Carre CX) */
+  .produk-netcore-content-kiri > .caption-keterangan {
+    margin-left: 1rem !important; /* 16px */
+    margin-right: 1rem !important; /* 16px */
+  }
+  .produk-netcore-content-kiri .fitur-list {
+    margin-left: 1rem !important; /* 16px */
+    margin-right: 1rem !important; /* 16px */
+  }
+
   /* Adjust overlays for mobile */
   .netcore-icon-overlay {
     top: 12px !important;
@@ -227,16 +238,17 @@
 
   .produk-netcore-image-container {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 310px !important;
     height: auto !important;
-    aspect-ratio: 3/4 !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 380px !important; /* sedikit lebih pendek dari tinggi natural */
     order: 1 !important;
   }
 
   /* Override dimens-style-optimized.css classes for small mobile */
   body .produk-netcore-image-container.w-595 {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 310px !important;
   }
 
   body .produk-netcore-image-container.h-770 {
@@ -332,6 +344,16 @@
     margin-bottom: 1.5rem !important;
   }
 
+  /* Khusus margin kiri/kanan untuk deskripsi dan list fitur (samakan dengan Carre CX) - small mobile */
+  .produk-netcore-content-kiri > .caption-keterangan {
+    margin-left: 0.75rem !important; /* 12px */
+    margin-right: 0.75rem !important; /* 12px */
+  }
+  .produk-netcore-content-kiri .fitur-list {
+    margin-left: 0.75rem !important; /* 12px */
+    margin-right: 0.75rem !important; /* 12px */
+  }
+
   /* Adjust overlays for small mobile */
   .netcore-icon-overlay {
     top: 10px !important;
@@ -361,8 +383,8 @@
 
   /* Tambahkan padding khusus untuk produk netcore */
   .produk-netcore-wrapper {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 
@@ -374,8 +396,8 @@
 
   /* Tambahkan padding khusus untuk produk netcore */
   .produk-netcore-wrapper {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 }
 
@@ -429,17 +451,19 @@
 @media (max-width: 767.98px) {
   body .produk-netcore-image-container.w-595.h-770 {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 330px !important;
     height: auto !important;
-    aspect-ratio: 3/4 !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 400px !important; /* sedikit lebih pendek dari tinggi natural */
   }
 }
 
 @media (max-width: 575.98px) {
   body .produk-netcore-image-container.w-595.h-770 {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 310px !important;
     height: auto !important;
-    aspect-ratio: 3/4 !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 380px !important; /* sedikit lebih pendek dari tinggi natural */
   }
 }

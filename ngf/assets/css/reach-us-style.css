@@ -96,6 +96,26 @@
     width: 100% !important;
     max-width: 300px !important;
   }
+
+  /* Pastikan container utama tidak offset kiri */
+  body #reach-us.ml-70 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Pastikan section tombol membentang penuh dan center */
+  body #reach-us .button-section {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Center tombol secara eksplisit */
+  body #reach-us .btn-demo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -296,5 +316,25 @@
   body #reach-us .reach-us-content .judul-strip,
   body #reach-us .reach-us-content .judul-tebal {
     text-align: center !important;
+  }
+
+  /* Pastikan container utama tidak offset kiri - small mobile */
+  body #reach-us.ml-70 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Pastikan section tombol membentang penuh dan center - small mobile */
+  body #reach-us .button-section {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Center tombol secara eksplisit - small mobile */
+  body #reach-us .btn-demo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }

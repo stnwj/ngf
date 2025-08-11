@@ -43,7 +43,7 @@
     <div class="container container-full-width">
       <div class="header-bottom-line"></div>
     </div>
-    <div class="header-spacer"></div>
+    <div class="mt-5 col-lg-5"></div>
     <!-- END Header  -->
 
     <!-- Hero Section -->

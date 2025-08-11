@@ -88,10 +88,29 @@
 
   .produk-frontier-image-container {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 330px !important;
     height: auto !important;
-    aspect-ratio: 595/770 !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 400px !important; /* sedikit lebih pendek dari tinggi natural */
+    margin-left: auto !important;
+    margin-right: auto !important;
     order: 1 !important;
+  }
+
+  /* Force override ketika class utilitas w-595/h-770 terpasang */
+  body .produk-frontier-image-container.w-595 {
+    width: 100% !important;
+    max-width: 330px !important;
+  }
+  body .produk-frontier-image-container.h-770 {
+    height: auto !important;
+  }
+  body .produk-frontier-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 330px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 400px !important; /* sedikit lebih pendek dari tinggi natural */
   }
 
   .produk-frontier-content-kiri {
@@ -164,6 +183,16 @@
     line-height: 1.6 !important;
   }
 
+  /* Khusus margin kiri/kanan untuk deskripsi dan list fitur (samakan dengan Netcore/Carre CX) */
+  .produk-frontier-content-kiri > .caption-keterangan {
+    margin-left: 1rem !important; /* 16px */
+    margin-right: 1rem !important; /* 16px */
+  }
+  .produk-frontier-content-kiri .fitur-list {
+    margin-left: 1rem !important; /* 16px */
+    margin-right: 1rem !important; /* 16px */
+  }
+
   /* Center the button */
   .produk-frontier-content-kiri .btn-demo {
     display: block !important;
@@ -181,10 +210,29 @@
 
   .produk-frontier-image-container {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 310px !important;
     height: auto !important;
-    aspect-ratio: 595/770 !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 380px !important; /* sedikit lebih pendek dari tinggi natural */
+    margin-left: auto !important;
+    margin-right: auto !important;
     order: 1 !important;
+  }
+
+  /* Force override ketika class utilitas w-595/h-770 terpasang - small mobile */
+  body .produk-frontier-image-container.w-595 {
+    width: 100% !important;
+    max-width: 310px !important;
+  }
+  body .produk-frontier-image-container.h-770 {
+    height: auto !important;
+  }
+  body .produk-frontier-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 310px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 380px !important; /* sedikit lebih pendek dari tinggi natural */
   }
 
   .produk-frontier-content-kiri {
@@ -258,6 +306,16 @@
     font-size: 14px !important;
   }
 
+  /* Khusus margin kiri/kanan untuk deskripsi dan list fitur (samakan dengan Netcore/Carre CX) - small mobile */
+  .produk-frontier-content-kiri > .caption-keterangan {
+    margin-left: 0.75rem !important; /* 12px */
+    margin-right: 0.75rem !important; /* 12px */
+  }
+  .produk-frontier-content-kiri .fitur-list {
+    margin-left: 0.75rem !important; /* 12px */
+    margin-right: 0.75rem !important; /* 12px */
+  }
+
   /* Center the button */
   .produk-frontier-content-kiri .btn-demo {
     display: block !important;
@@ -275,8 +333,8 @@
 
   /* Tambahkan padding khusus untuk produk frontier */
   .produk-frontier-wrapper {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 
@@ -288,8 +346,8 @@
 
   /* Tambahkan padding khusus untuk produk frontier */
   .produk-frontier-wrapper {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 }
 

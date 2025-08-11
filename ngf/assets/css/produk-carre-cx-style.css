@@ -75,9 +75,12 @@
 
   .produk-carre-cx-image-container {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 330px !important;
     height: auto !important;
-    aspect-ratio: 595/770 !important;
+    /* Match Netcore mobile: 3/4 */
+    aspect-ratio: 3/4 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     order: 1 !important;
   }
 
@@ -104,6 +107,14 @@
 
   body .mt-70 {
     margin-top: 0 !important;
+  }
+
+  /* Stronger override for logo overlay margins (wins over .mt-40/.ml-40 loaded later) */
+  body .produk-carre-cx-image-container .carre-logo-overlay.mt-40 {
+    margin-top: 0 !important;
+  }
+  body .produk-carre-cx-image-container .carre-logo-overlay.ml-40 {
+    margin-left: 0 !important;
   }
 
   /* Center badge and title for mobile */
@@ -160,10 +171,25 @@
     margin-bottom: 2rem !important;
   }
 
+  /* Khusus margin kiri/kanan untuk deskripsi saja (bukan list fitur) */
+  .produk-carre-cx-content-kanan > .caption-keterangan {
+    margin-left: 1rem !important; /* 16px */
+    margin-right: 1rem !important; /* 16px */
+  }
+
+  /* Samakan margin kiri/kanan untuk list fitur */
+  .produk-carre-cx-content-kanan .fitur-list {
+    margin-left: 1rem !important; /* 16px */
+    margin-right: 1rem !important; /* 16px */
+  }
+
   /* Adjust logo overlay for mobile */
   .carre-logo-overlay {
-    top: 20px !important;
-    left: 20px !important;
+    top: 28px !important;
+    left: 28px !important;
+    margin-top: 0 !important; /* neutralize mt-40 */
+    margin-left: 0 !important; /* neutralize ml-40 */
+    z-index: 5 !important;
   }
 
   .carre-logo {
@@ -181,9 +207,12 @@
 
   .produk-carre-cx-image-container {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 310px !important;
     height: auto !important;
-    aspect-ratio: 595/770 !important;
+    /* Match Netcore mobile: 3/4 */
+    aspect-ratio: 3/4 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     order: 1 !important;
   }
 
@@ -267,10 +296,25 @@
     margin-bottom: 1.5rem !important;
   }
 
+  /* Khusus margin kiri/kanan untuk deskripsi saja (bukan list fitur) - small mobile */
+  .produk-carre-cx-content-kanan > .caption-keterangan {
+    margin-left: 0.75rem !important; /* 12px */
+    margin-right: 0.75rem !important; /* 12px */
+  }
+
+  /* Samakan margin kiri/kanan untuk list fitur - small mobile */
+  .produk-carre-cx-content-kanan .fitur-list {
+    margin-left: 0.75rem !important; /* 12px */
+    margin-right: 0.75rem !important; /* 12px */
+  }
+
   /* Adjust logo overlay for small mobile */
   .carre-logo-overlay {
-    top: 15px !important;
-    left: 15px !important;
+    top: 24px !important;
+    left: 24px !important;
+    margin-top: 0 !important; /* neutralize mt-40 */
+    margin-left: 0 !important; /* neutralize ml-40 */
+    z-index: 5 !important;
   }
 
   .carre-logo {
@@ -288,8 +332,8 @@
 
   /* Tambahkan padding khusus untuk produk carre cx */
   .produk-carre-cx-wrapper {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 
@@ -301,8 +345,8 @@
 
   /* Tambahkan padding khusus untuk produk carre cx */
   .produk-carre-cx-wrapper {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 }
 
@@ -401,5 +445,64 @@
   .produk-carre-cx-content-kanan .interaction-wrapper {
     display: inline !important;
     white-space: nowrap !important;
+  }
+}
+
+/* Sinkron ukuran dengan Netcore (mobile) */
+@media (max-width: 767.98px) {
+  .produk-carre-cx-image-container {
+    width: 100% !important;
+    max-width: 330px !important;
+    height: auto !important;
+    aspect-ratio: 3/3.5 !important; /* dipendekkan dari 3/4 */
+    max-height: 260px !important; /* tambah batas tinggi */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* Force override ketika class utilitas w-595/h-770 terpasang */
+  body .produk-carre-cx-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 330px !important;
+    height: auto !important;
+    aspect-ratio: 3/3.5 !important; /* dipendekkan dari 3/4 */
+    max-height: 260px !important; /* tambah batas tinggi */
+  }
+  .produk-carre-cx-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .produk-carre-cx-image-container {
+    width: 100% !important;
+    max-width: 310px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 380px !important; /* sedikit lebih pendek dari tinggi natural */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    order: 1 !important;
+  }
+  /* Force override ketika class utilitas w-595/h-770 terpasang */
+  body .produk-carre-cx-image-container.w-595.h-770 {
+    width: 100% !important;
+    max-width: 310px !important;
+    height: auto !important;
+    aspect-ratio: 3/4 !important; /* kembalikan proporsi awal */
+    max-height: 380px !important; /* sedikit lebih pendek dari tinggi natural */
+  }
+  .produk-carre-cx-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
   }
 }
