@@ -47,8 +47,8 @@
 
   body .textfield-group {
     width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -72,8 +72,8 @@
 
   body .textarea-section {
     width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -99,8 +99,8 @@
 
   /* Pastikan container utama tidak offset kiri */
   body #reach-us.ml-70 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
   }
 
   /* Pastikan section tombol membentang penuh dan center */
@@ -131,8 +131,8 @@
   /* Force full width for form elements */
   body #reach-us .textfield-group {
     width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -158,8 +158,8 @@
 
   body #reach-us .textarea-section {
     width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -239,8 +239,8 @@
   body #reach-us .textfield-group,
   body #reach-us .textarea-section {
     width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -251,7 +251,12 @@
   }
 
   body #reach-us .textfield-group,
-  body #reach-us .textarea-section,
+  body #reach-us .textarea-section {
+    width: calc(100% - 1.5rem) !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
   body #reach-us .textfield-row,
   body #reach-us .textfield-container,
   body #reach-us .textarea-container,
@@ -270,8 +275,8 @@
   }
 
   /* Force all form elements to be full width with highest specificity */
-  body #reach-us div[class*="textfield"],
-  body #reach-us div[class*="textarea"],
+  body #reach-us div[class*="textfield"]:not(.textfield-group),
+  body #reach-us div[class*="textarea"]:not(.textarea-section),
   body #reach-us input,
   body #reach-us textarea {
     width: 100% !important;
@@ -320,8 +325,8 @@
 
   /* Pastikan container utama tidak offset kiri - small mobile */
   body #reach-us.ml-70 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
   }
 
   /* Pastikan section tombol membentang penuh dan center - small mobile */

@@ -32,18 +32,21 @@ require_once __DIR__ . '/assets/php/dotNotationHelper.php';
             $placeholder = 'Your Name';
             $name = 'name';
             $id = 'name';
+            $label = 'Your Name';
             include 'assets/php/komponen/textfield.php';
           ?>
           <?php
             $placeholder = 'Email Address';
             $name = 'email';
             $id = 'email';
+            $label = 'Email Address';
             include 'assets/php/komponen/textfield.php';
           ?>
           <?php
             $placeholder = 'Phone Number (optional)';
             $name = 'phone';
             $id = 'phone';
+            $label = 'Phone Number (optional)';
             include 'assets/php/komponen/textfield.php';
           ?>
         </div>
@@ -54,6 +57,7 @@ require_once __DIR__ . '/assets/php/dotNotationHelper.php';
           $name = 'message';
           $id = 'message';
           $rows = 4;
+          $label = 'Message';
           include 'assets/php/komponen/textarea.php';
         ?>
       </div>

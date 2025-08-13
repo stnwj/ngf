@@ -6,6 +6,18 @@
   min-width: 0;
 }
 
+.textfield-label {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #141522;
+  margin-bottom: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: none; /* Hidden by default, shown only on mobile */
+}
+
 .textfield-input {
   font-weight: 400;
   font-style: normal;
@@ -43,6 +55,15 @@
     min-width: 100% !important;
   }
 
+  .textfield-label {
+    display: block !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin-bottom: 6px !important;
+    color: #54577a !important;
+    font-weight: 500 !important;
+  }
+
   .textfield-input {
     font-size: 16px !important;
     line-height: 32px !important;
@@ -54,6 +75,7 @@
   .textfield-input::placeholder {
     font-size: 16px !important;
     line-height: 32px !important;
+    color: transparent !important;
   }
 }
 
@@ -63,6 +85,15 @@
     min-width: 100% !important;
   }
 
+  .textfield-label {
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    margin-bottom: 4px !important;
+    color: #54577a !important;
+    font-weight: 500 !important;
+  }
+
   .textfield-input {
     font-size: 14px !important;
     line-height: 28px !important;
@@ -74,5 +105,6 @@
   .textfield-input::placeholder {
     font-size: 14px !important;
     line-height: 28px !important;
+    color: transparent !important;
   }
 }
