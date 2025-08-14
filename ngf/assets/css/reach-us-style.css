@@ -36,6 +36,45 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 767.98px) {
+  /* Add margin bottom for reach-us section on mobile */
+  body #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  /* Ensure reach-us section has proper spacing */
+  #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  /* Add top margin for better spacing in mobile */
+  #reach-us {
+    margin-top: 4rem !important; /* 64px - increased from 48px */
+  }
+
+  /* Add spacing around the reach-us content */
+  #reach-us .reach-us-content {
+    padding: 3rem 1.5rem !important; /* 48px top/bottom, 24px left/right - increased */
+  }
+
+  /* Add spacing between badge and title */
+  #reach-us .badge-layout {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
+  /* Add spacing between title and form */
+  #reach-us .mt-20 {
+    margin-bottom: 2.5rem !important; /* 40px - increased from 32px */
+  }
+
+  /* Add spacing between form sections */
+  #reach-us .textfield-group {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
+  #reach-us .textarea-section {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
   /* Override ml-70 and mr-70 classes for mobile */
   body .ml-70 {
     margin-left: 1.5rem !important;
@@ -119,6 +158,45 @@
 }
 
 @media (max-width: 575.98px) {
+  /* Add margin bottom for reach-us section on small mobile */
+  body #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  /* Ensure reach-us section has proper spacing */
+  #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  /* Add top margin for better spacing in small mobile */
+  #reach-us {
+    margin-top: 3rem !important; /* 48px - increased from 40px */
+  }
+
+  /* Add spacing around the reach-us content for small mobile */
+  #reach-us .reach-us-content {
+    padding: 2rem 1rem !important; /* 32px top/bottom, 16px left/right - increased */
+  }
+
+  /* Add spacing between badge and title for small mobile */
+  #reach-us .badge-layout {
+    margin-bottom: 1.5rem !important; /* 24px - increased from 20px */
+  }
+
+  /* Add spacing between title and form for small mobile */
+  #reach-us .mt-20 {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
+  /* Add spacing between form sections for small mobile */
+  #reach-us .textfield-group {
+    margin-bottom: 1.5rem !important; /* 24px - increased from 20px */
+  }
+
+  #reach-us .textarea-section {
+    margin-bottom: 1.5rem !important; /* 24px - increased from 20px */
+  }
+
   /* Override ml-70 and mr-70 classes for small mobile */
   body .ml-70 {
     margin-left: 1.5rem !important;

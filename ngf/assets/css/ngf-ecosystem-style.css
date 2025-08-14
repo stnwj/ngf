@@ -68,6 +68,7 @@
   #ecosystem {
     margin-left: 1rem !important; /* dikurangi dari 2rem */
     margin-right: 1rem !important; /* dikurangi dari 2rem */
+    margin-top: 4.6875rem !important; /* 75px - adjusted spacing from image accordion */
   }
 
   .ecosystem-title {
@@ -97,12 +98,18 @@
   .ecosystem-feature-description {
     font-size: 14px !important;
   }
+
+  /* Ultimate override for ecosystem spacing */
+  html body #ecosystem {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override */
+  }
 }
 
 @media (max-width: 575.98px) {
   #ecosystem {
     margin-left: 0.75rem !important; /* dikurangi dari 1.5rem */
     margin-right: 0.75rem !important; /* dikurangi dari 1.5rem */
+    margin-top: 4.6875rem !important; /* 75px - adjusted spacing from image accordion */
   }
 
   .ecosystem-title {
@@ -120,5 +127,10 @@
 
   .ecosystem-feature-description {
     font-size: 13px !important;
+  }
+
+  /* Ultimate override for ecosystem spacing - small mobile */
+  html body #ecosystem {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override */
   }
 }

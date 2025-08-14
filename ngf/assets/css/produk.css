@@ -3,3 +3,26 @@
   width: 100%;
   min-height: 100vh;
 }
+
+/* Mobile spacing for produk section */
+@media (max-width: 767.98px) {
+  .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after produk */
+  }
+
+  /* Ultimate override for produk spacing */
+  html body .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after produk */
+  }
+
+  /* Ultimate override for produk spacing - small mobile */
+  html body .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+}

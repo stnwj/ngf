@@ -39,11 +39,23 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 767.98px) {
+  /* Add extra spacing before case study section */
+  #case-study {
+    margin-top: 6.25rem !important; /* 100px - extra spacing before case study */
+  }
+
   .case-study-wrapper {
     flex-direction: column !important;
     gap: 1.5rem !important; /* dikurangi dari 2rem */
     align-items: center !important;
+    margin-top: 6.25rem !important; /* 100px - additional spacing */
   }
+
+  /* Add extra spacing after produk section */
+  .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after produk */
+  }
+}
 
   .case-study-image-container {
     width: 100% !important;
@@ -160,11 +172,23 @@
 }
 
 @media (max-width: 575.98px) {
+  /* Add extra spacing before case study section for small mobile */
+  #case-study {
+    margin-top: 6.25rem !important; /* 100px - extra spacing before case study */
+  }
+
   .case-study-wrapper {
     flex-direction: column !important;
     gap: 1.25rem !important; /* dikurangi dari 1.5rem */
     align-items: center !important;
+    margin-top: 6.25rem !important; /* 100px - additional spacing */
   }
+
+  /* Add extra spacing after produk section for small mobile */
+  .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after produk */
+  }
+}
 
   .case-study-image-container {
     width: 100% !important;
@@ -316,12 +340,30 @@
     align-items: center !important;
     justify-content: center !important;
   }
+
+  /* Ultimate override for case study spacing */
+  html body #case-study {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
 }
 
 @media (max-width: 575.98px) {
   .case-study-content .produk-judul-besar {
     align-items: center !important;
     justify-content: center !important;
+  }
+
+  /* Ultimate override for case study spacing - small mobile */
+  html body #case-study {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
   }
 }
 

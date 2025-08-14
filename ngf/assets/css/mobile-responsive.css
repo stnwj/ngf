@@ -1,6 +1,15 @@
 /* Mobile Responsive Styles - Bootstrap Format */
 /* This file contains all mobile-specific styles extracted from various CSS files */
 
+/* Desktop Footer Styles */
+.footer-main .footer-socmed {
+  display: none;
+}
+
+.footer-bottom .footer-socmed {
+  display: flex;
+}
+
 /* ===== MOBILE OVERRIDES (max-width: 767.98px) ===== */
 
 /* Body and HTML Mobile Overrides */
@@ -159,6 +168,94 @@
 }
 
 @media (max-width: 575.98px) {
+  /* Add extra spacing between hero section and case study section for small mobile */
+  .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after hero */
+  }
+
+  /* Add extra spacing before case study section for small mobile */
+  #case-study {
+    margin-top: 6.25rem !important; /* 100px - extra spacing before case study */
+  }
+
+  /* Ensure case study wrapper has proper spacing for small mobile */
+  .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - additional spacing */
+  }
+
+  /* Force override for hero section - small mobile */
+  body .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - force override */
+  }
+
+  /* Override any mt-100 or other margin classes that might interfere - small mobile */
+  body .mt-100 {
+    margin-top: 6.25rem !important; /* 100px - override for case study */
+  }
+
+  /* Add extra spacing between produk section and case study section for small mobile */
+  .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after produk */
+  }
+
+  /* Ensure first produk section has proper spacing for small mobile */
+  .produk-hera-wrapper {
+    margin-top: 6.25rem !important; /* 100px - additional spacing */
+  }
+
+  /* Override dimens-style-optimized.css for case study spacing - small mobile */
+  body .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - override any other margin */
+  }
+
+  /* Force override for produk section - small mobile */
+  body .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - force override */
+  }
+
+  /* Override any mt-150 or other margin classes that might interfere - small mobile */
+  body .mt-150 {
+    margin-top: 6.25rem !important; /* 100px - override for case study */
+  }
+
+  /* Add margin bottom for reach-us section on small mobile */
+  #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  body #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  /* Add top margin for better spacing in small mobile */
+  #reach-us {
+    margin-top: 3rem !important; /* 48px - increased from 40px */
+  }
+
+  /* Add spacing around the reach-us content for small mobile */
+  #reach-us .reach-us-content {
+    padding: 2rem 1rem !important; /* 32px top/bottom, 16px left/right - increased */
+  }
+
+  /* Add spacing between badge and title for small mobile */
+  #reach-us .badge-layout {
+    margin-bottom: 1.5rem !important; /* 24px - increased from 20px */
+  }
+
+  /* Add spacing between title and form for small mobile */
+  #reach-us .mt-20 {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
+  /* Add spacing between form sections for small mobile */
+  #reach-us .textfield-group {
+    margin-bottom: 1.5rem !important; /* 24px - increased from 20px */
+  }
+
+  #reach-us .textarea-section {
+    margin-bottom: 1.5rem !important; /* 24px - increased from 20px */
+  }
+
   header {
     padding: 0.5rem 0.75rem !important;
     position: sticky !important;
@@ -735,7 +832,7 @@
   }
 
   .mt-150 {
-    margin-top: 3rem !important; /* 48px */
+    margin-top: 15.625rem !important; /* 250px */
   }
 
   /* Reduce left/right margins */
@@ -773,7 +870,7 @@
   }
 
   .mt-150 {
-    margin-top: 2.5rem !important; /* 40px */
+    margin-top: 15.625rem !important; /* 250px */
   }
 
   .ml-70 {
@@ -787,6 +884,108 @@
   .px-70 {
     padding-left: 0.75rem !important; /* 12px */
     padding-right: 0.75rem !important; /* 12px */
+  }
+}
+
+/* ===== HERO TO CASE STUDY SPACING MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  /* Add extra spacing between hero section and case study section */
+  .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after hero */
+  }
+
+  /* Add extra spacing before case study section */
+  #case-study {
+    margin-top: 6.25rem !important; /* 100px - extra spacing before case study */
+  }
+
+  /* Ensure case study wrapper has proper spacing */
+  .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - additional spacing */
+  }
+
+  /* Force override for hero section */
+  body .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - force override */
+  }
+
+  /* Override any mt-100 or other margin classes that might interfere */
+  body .mt-100 {
+    margin-top: 6.25rem !important; /* 100px - override for case study */
+  }
+}
+
+/* ===== PRODUK TO CASE STUDY SPACING MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  /* Add extra spacing between produk section and case study section */
+  .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after produk */
+  }
+
+  /* Add extra spacing before case study section */
+  #case-study {
+    margin-top: 6.25rem !important; /* 100px - extra spacing before case study */
+  }
+
+  /* Ensure first produk section has proper spacing */
+  .produk-hera-wrapper {
+    margin-top: 6.25rem !important; /* 100px - additional spacing */
+  }
+
+  /* Override dimens-style-optimized.css for case study spacing */
+  body .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - override any other margin */
+  }
+
+  /* Force override for produk section */
+  body .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - force override */
+  }
+
+  /* Override any mt-150 or other margin classes that might interfere */
+  body .mt-150 {
+    margin-top: 6.25rem !important; /* 100px - override for case study */
+  }
+}
+
+/* ===== REACH-US MOBILE STYLES ===== */
+@media (max-width: 767.98px) {
+  /* Add margin bottom for reach-us section */
+  #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  body #reach-us {
+    margin-bottom: 6.25rem !important; /* 100px */
+  }
+
+  /* Add top margin for better spacing in mobile */
+  #reach-us {
+    margin-top: 4rem !important; /* 64px - increased from 48px */
+  }
+
+  /* Add spacing around the reach-us content */
+  #reach-us .reach-us-content {
+    padding: 3rem 1.5rem !important; /* 48px top/bottom, 24px left/right - increased */
+  }
+
+  /* Add spacing between badge and title */
+  #reach-us .badge-layout {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
+  /* Add spacing between title and form */
+  #reach-us .mt-20 {
+    margin-bottom: 2.5rem !important; /* 40px - increased from 32px */
+  }
+
+  /* Add spacing between form sections */
+  #reach-us .textfield-group {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
+  }
+
+  #reach-us .textarea-section {
+    margin-bottom: 2rem !important; /* 32px - increased from 24px */
   }
 }
 
@@ -806,9 +1005,11 @@
   }
 
   .footer-menu {
-    flex-direction: column !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
     align-items: center !important;
-    gap: 0.75rem !important;
+    gap: 1rem !important;
   }
 
   .footer-menu a {
@@ -829,9 +1030,15 @@
     line-height: 20px !important;
   }
 
-  .footer-socmed {
+  .footer-main .footer-socmed {
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: center !important;
     gap: 1.25rem !important;
+  }
+
+  .footer-bottom .footer-socmed {
+    display: none !important;
   }
 
   .footer-socmed img {
@@ -851,7 +1058,11 @@
   }
 
   .footer-menu {
-    gap: 0.5rem !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
   }
 
   .footer-menu a {
@@ -869,8 +1080,15 @@
     line-height: 18px !important;
   }
 
-  .footer-socmed {
+  .footer-main .footer-socmed {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
     gap: 0.75rem !important;
+  }
+
+  .footer-bottom .footer-socmed {
+    display: none !important;
   }
 
   .footer-socmed img {
@@ -884,7 +1102,7 @@
   .about-badge-container {
     margin-left: 0;
     justify-content: center;
-    margin-top: 150px !important; /* Increased to 150px for spacing from clients section */
+    margin-top: 4.6875rem !important; /* 75px - adjusted spacing from clients section */
   }
 
   .about-content {
@@ -1002,12 +1220,12 @@
 @media (max-width: 767.98px) {
   /* About section - samakan margin kanan dengan hero section */
   .about-badge-container {
-    margin-top: 150px !important; /* Increased to 150px for mobile spacing */
+    margin-top: 4.6875rem !important; /* 75px - adjusted mobile spacing */
   }
 
   /* Force override for about section spacing */
   body .about-badge-container {
-    margin-top: 150px !important;
+    margin-top: 4.6875rem !important; /* 75px - adjusted mobile spacing */
   }
   .about-content {
     margin-right: 15px !important;
@@ -1048,7 +1266,7 @@
 
 @media (max-width: 575.98px) {
   body .about-badge-container {
-    margin-top: 150px !important; /* Increased to 150px for small mobile spacing */
+    margin-top: 4.6875rem !important; /* 75px - adjusted small mobile spacing */
   }
 
   body .container-full-width {
@@ -1236,7 +1454,7 @@
   #ecosystem {
     margin-left: 1rem !important;
     margin-right: 1rem !important;
-    margin-top: 150px !important; /* Added 150px top margin for spacing */
+    margin-top: 4.6875rem !important; /* 75px - adjusted spacing */
     text-align: center !important; /* Center alignment for mobile */
   }
 
@@ -1275,7 +1493,7 @@
   #ecosystem {
     margin-left: 0.75rem !important;
     margin-right: 0.75rem !important;
-    margin-top: 150px !important; /* Added 150px top margin for small mobile spacing */
+    margin-top: 4.6875rem !important; /* 75px - adjusted spacing */
     text-align: center !important; /* Center alignment for small mobile */
   }
 
@@ -1424,5 +1642,107 @@
     margin-left: 0.5rem !important; /* Reduced margin for less spacing */
     margin-right: 0.5rem !important; /* Reduced margin for less spacing */
     width: calc(100% - 1rem) !important; /* Adjusted width calculation */
+  }
+}
+
+/* ===== ULTIMATE OVERRIDE FOR SPACING ===== */
+/* These rules have the highest specificity to override all other CSS files */
+@media (max-width: 767.98px) {
+  /* Ultimate override for hero to case study spacing */
+  html body .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body #case-study {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  /* Ultimate override for accordion to image spacing */
+  html body .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  /* Ultimate override for ecosystem spacing */
+  html body #ecosystem {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override */
+  }
+
+  /* Override all margin classes that might interfere */
+  html body .mt-100 {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .mt-150 {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override for about us spacing */
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Ultimate override for hero to case study spacing - small mobile */
+  html body .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body #case-study {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .case-study-wrapper {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .produk-bg {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  /* Ultimate override for accordion to image spacing - small mobile */
+  html body .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  /* Ultimate override for ecosystem spacing - small mobile */
+  html body #ecosystem {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override */
+  }
+
+  /* Override all margin classes that might interfere - small mobile */
+  html body .mt-100 {
+    margin-top: 6.25rem !important; /* 100px - ultimate override */
+  }
+
+  html body .mt-150 {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override for about us spacing */
   }
 }

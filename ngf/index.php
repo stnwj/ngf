@@ -155,9 +155,9 @@
     <?php include 'produk.php'; ?>
     <div class="mt-100"></div>
     <?php include 'case_study.php'; ?>
-    <div class="mt-75"></div>
+    <div class="mt-150"></div>
     <?php include 'reach_us.php'; ?>
-    <div class="mt-75"></div>
+    <div class="mt-150"></div>
     <script src="assets/js/accordion-custom.js"></script>
     <script src="assets/js/smooth-scroll.js"></script>
     <?php include 'footer.php'; ?>

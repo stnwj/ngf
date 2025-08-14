@@ -203,6 +203,77 @@ header {
   flex-shrink: 0;
 }
 
+/* Mobile spacing for accordion */
+@media (max-width: 767.98px) {
+  .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  /* Ultimate override for accordion spacing */
+  html body .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  /* Ultimate override for accordion spacing - small mobile */
+  html body .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+}
+
 /* Body Background */
 .body-bg-white {
   background: #fff;
@@ -234,6 +305,29 @@ header {
 .hero-section-custom {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+/* Mobile spacing for hero section */
+@media (max-width: 767.98px) {
+  .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after hero */
+  }
+
+  /* Ultimate override for hero spacing */
+  html body .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - extra spacing after hero */
+  }
+
+  /* Ultimate override for hero spacing - small mobile */
+  html body .hero-section-custom {
+    margin-bottom: 6.25rem !important; /* 100px - ultimate override */
+  }
 }
 
 /* Hero Title */
@@ -557,4 +651,19 @@ html {
   align-items: center !important;
   width: 100% !important;
   margin-bottom: 1rem !important;
+}
+
+/* Mobile spacing overrides */
+@media (max-width: 767.98px) {
+  /* Override mt-150 for about us spacing */
+  html body .mt-150 {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override for about us spacing */
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Override mt-150 for about us spacing - small mobile */
+  html body .mt-150 {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override for about us spacing */
+  }
 }

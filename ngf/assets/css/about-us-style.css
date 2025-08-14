@@ -9,6 +9,29 @@
   padding-left: 0;
 }
 
+/* Mobile spacing for about us section */
+@media (max-width: 767.98px) {
+  .about-badge-container {
+    margin-top: 4.6875rem !important; /* 75px - spacing from clients section */
+  }
+
+  /* Ultimate override for about us spacing */
+  html body .about-badge-container {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-badge-container {
+    margin-top: 4.6875rem !important; /* 75px - spacing from clients section */
+  }
+
+  /* Ultimate override for about us spacing - small mobile */
+  html body .about-badge-container {
+    margin-top: 4.6875rem !important; /* 75px - ultimate override */
+  }
+}
+
 .about-content {
   margin-top: 20px;
   width: 100%;
@@ -96,6 +119,77 @@
   box-sizing: border-box;
   overflow: visible;
   position: relative;
+}
+
+/* Mobile spacing for accordion section */
+@media (max-width: 767.98px) {
+  .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  /* Ultimate override for accordion spacing */
+  html body .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - extra spacing after accordion */
+  }
+
+  /* Ultimate override for accordion spacing - small mobile */
+  html body .accordion-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-content-wrapper {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-left-section {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
+
+  html body .accordion-container {
+    margin-bottom: 1.875rem !important; /* 30px - ultimate override */
+  }
 }
 
 .accordion-content-wrapper {

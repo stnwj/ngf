@@ -14,6 +14,13 @@ require_once 'assets/php/dotNotationHelper.php';
       <a href="#"><?php echo getByDot($strings, 'footer.menu.faq'); ?></a>
       <a href="#reach-us"><?php echo getByDot($strings, 'footer.menu.contact_us'); ?></a>
     </nav>
+    <div class="footer-socmed">
+      <a href="#" target="_blank"><img src="assets/images/ic_facebook.svg" alt="<?php echo getByDot($strings, 'footer.social_media.facebook'); ?>" /></a>
+      <a href="#" target="_blank"><img src="assets/images/ic_twitter.svg" alt="<?php echo getByDot($strings, 'footer.social_media.twitter'); ?>" /></a>
+      <a href="#" target="_blank"><img src="assets/images/ic_instagram.svg" alt="<?php echo getByDot($strings, 'footer.social_media.instagram'); ?>" /></a>
+      <a href="#" target="_blank"><img src="assets/images/ic_github.svg" alt="<?php echo getByDot($strings, 'footer.social_media.github'); ?>" /></a>
+      <a href="#" target="_blank"><img src="assets/images/ic_linkedIn.svg" alt="<?php echo getByDot($strings, 'footer.social_media.linkedin'); ?>" /></a>
+    </div>
   </div>
   <div class="footer-bottom">
     <div class="footer-copyright">
