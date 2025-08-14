@@ -140,14 +140,62 @@
     max-height: 35px !important;
   }
 
+  /* Mobile menu styling for larger mobile */
+  #mobileMenu {
+    background: #fff !important;
+    border-top: 1px solid #e5e7eb !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  #mobileMenu .nav-link {
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    color: #374151 !important;
+    font-weight: 500 !important;
+    transition: color 0.3s ease !important;
+  }
+
+  #mobileMenu .nav-link:hover {
+    color: #ef5944 !important;
+  }
+
+  #mobileMenu .nav-link.active {
+    color: #ef5944 !important;
+  }
+
   /* Mobile hamburger button */
   header .btn-link {
     color: #141522 !important;
     text-decoration: none;
+    border: none !important;
+    background: transparent !important;
+    padding: 0.5rem !important;
+    transition: all 0.3s ease !important;
   }
 
   header .btn-link:hover {
     color: #ef5944 !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 0.375rem !important;
+  }
+
+  header .btn-link:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* Hamburger icon transition */
+  header .btn-link i {
+    transition: transform 0.3s ease !important;
+  }
+
+  /* Hamburger icon animation for larger mobile */
+  header .btn-link i.bi-list {
+    transform: rotate(0deg) !important;
+  }
+
+  header .btn-link i.bi-x-lg {
+    transform: rotate(180deg) !important;
   }
 
   /* Ensure header stays on top */
@@ -296,6 +344,61 @@
 
   header img[alt="ngf logo"] {
     max-height: 30px !important;
+  }
+
+  /* Mobile hamburger menu styling */
+  .btn-link {
+    border: none !important;
+    background: transparent !important;
+    padding: 0.5rem !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .btn-link:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 0.375rem !important;
+  }
+
+  .btn-link:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* Hamburger icon transition */
+  .btn-link i {
+    transition: transform 0.3s ease !important;
+  }
+
+  /* Hamburger icon animation */
+  .btn-link i.bi-list {
+    transform: rotate(0deg) !important;
+  }
+
+  .btn-link i.bi-x-lg {
+    transform: rotate(180deg) !important;
+  }
+
+  /* Mobile menu styling */
+  #mobileMenu {
+    background: #fff !important;
+    border-top: 1px solid #e5e7eb !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  #mobileMenu .nav-link {
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    color: #374151 !important;
+    font-weight: 500 !important;
+    transition: color 0.3s ease !important;
+  }
+
+  #mobileMenu .nav-link:hover {
+    color: #ef5944 !important;
+  }
+
+  #mobileMenu .nav-link.active {
+    color: #ef5944 !important;
   }
 
   /* Ensure header stays on top for small mobile */

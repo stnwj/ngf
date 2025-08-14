@@ -160,6 +160,7 @@
     <div class="mt-150"></div>
     <script src="assets/js/accordion-custom.js"></script>
     <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
     <?php include 'footer.php'; ?>
   </body>
 </html>
